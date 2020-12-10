@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on Sh4n&#39;s Portfolio and Blog</title>
+    <link>https://sh4n0532.github.io/tags/others/</link>
+    <description>Recent content in Others on Sh4n&#39;s Portfolio and Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Oct 2020 22:54:48 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/tags/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homebrew</title>
+      <link>https://sh4n0532.github.io/posts/homebrew/</link>
+      <pubDate>Sun, 11 Oct 2020 22:54:48 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/homebrew/</guid>
+      <description>What is Homebrew  Homebrew is a package manager for MacOS and Linux. It helps us to install things you need in an easier way. Everything installed using Homebrew will be in its own directory so it is easier to manage them. It also provide many useful command to help you manage your packages.
+How to Install?  To install Homebrew on Mac you need to install the command line tools first.</description>
+    </item>
+    
+    <item>
+      <title>Command Line Tools</title>
+      <link>https://sh4n0532.github.io/posts/command-line-tools/</link>
+      <pubDate>Sun, 11 Oct 2020 16:34:21 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/command-line-tools/</guid>
+      <description>Installing Command Line Tools   Open terminal, enter xcode-select --install to install the command line tools to your Mac. You can use xcode-select --version to check the version installed. To see the path where the command line tools is installed you can use this command: xcode-select --print-path.  Uninstall Command Line Tools   Open Finder Select your drive, normally it is called Macintosh HD by default. Go to Library folder and find a folder named Developer.</description>
+    </item>
+    
+    <item>
+      <title>Git and Github</title>
+      <link>https://sh4n0532.github.io/posts/git-and-github/</link>
+      <pubDate>Sat, 10 Oct 2020 23:05:30 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/git-and-github/</guid>
+      <description>Installing Git  To install Git go to their official website https://git-scm.com. Go to Download and select your operating system, then just go through the normal installation process.
+If you are using Mac and also familiar with Homebrew or you want try it out you can go to this page to see details about Homebrew. You can install Git with Homebrew by entering brew install git.
+Setup Git  After installing Git you should first verity the installation and check the version installed with git --version.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sh4n">
+    <meta name="description" content="https://sh4n0532.github.io">
+    <meta name="keywords" content="blog,developer,personal,programmer">
+
+    <meta property="og:site_name" content="Sh4n&#39;s Portfolio and Blog">
+    <meta property="og:title" content="
+  Java Installation and Setup - Sh4n&#39;s Portfolio and Blog
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sh4n0532.github.io/posts/java-installation-and-setup/">
+    <meta property="og:image" content="https://sh4n0532.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://sh4n0532.github.io/posts/java-installation-and-setup/">
+    <meta name="twitter:image" content="https://sh4n0532.github.io">
+
+    <base href="https://sh4n0532.github.io/posts/java-installation-and-setup/">
+    <title>
+  Java Installation and Setup - Sh4n&#39;s Portfolio and Blog
+</title>
+
+    <link rel="canonical" href="https://sh4n0532.github.io/posts/java-installation-and-setup/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://sh4n0532.github.io/index.xml" type="application/rss+xml" title="Sh4n&#39;s Portfolio and Blog">
+      <link href="https://sh4n0532.github.io/index.xml" rel="feed" type="application/rss+xml" title="Sh4n&#39;s Portfolio and Blog" />
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Sh4n&#39;s Portfolio and Blog</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/project">Project</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/tags">Tags</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Java Installation and Setup</h1>
+      <h2 class="date">October 10, 2020</h2>
+
+      
+    </header>
+
+    <h2 id="install">Install</h2>
+<hr>
+<p>You can install Java JDK through Oracle official website <a href="https://www.oracle.com/java/technologies/javase-downloads.html">https://www.oracle.com/java/technologies/javase-downloads.html</a>. Click on <strong>JDK Download</strong> and choose your operating system to start downloading. After that you just need to follow the normal installation process through the wizard.</p>
+<p>After install Java for MacOS you need to set the JAVA_HOME path. Add this <code>export JAVA_HOME=&quot;/usr/libexec/java_home -v 14&quot;</code> to your <em>.bash_profile</em> or <em>.zshrc</em> depending on your terminal type. Then you can use <code>java --version</code> to verify java version.</p>
+<h2 id="install-with-homebrew">Install with Homebrew</h2>
+<hr>
+<p>Installing Java using Homebrew is a very easy process. But before that you need to make sure that you have Homebrew installed. If you don&rsquo;t know what is Homebrew or how to install it please visit <a href="https://sh4n0532.github.io/posts/homebrew/" title="Homebrew">Homebrew</a></p>
+<p>Before install Java, if you want more information about it there are fews command that you can use:</p>
+<ul>
+<li><code>brew search java</code> return the details of Java package and to make sure it is available</li>
+<li><code>brew info java</code> will show a very details information about Java such as the website it will install from, the version, dependencies and others.</li>
+<li>To install Java enter <code>brew install java</code> to start the installation.</li>
+<li>When done installed it will print some message that tell you what and how to configure to make Java working, follow the necessary steps depends on your needs. For the basic you should at least make Java working in your terminal. To make it work in terminal just add <code>export PATH=&quot;/usr/local/opt/openjdk/bin:$PATH&quot;</code> to your <em>.bash_profile</em> or <em>.zshrc</em> file depends on your terminal type. You can get the path you need to add to your PATH by using <code>which java</code>.</li>
+<li>After you have update your <em>.bash_profile</em> or <em>.zshrc</em> file you should reopen your terminal to let the changes take place. Then you can check your Java installation by entering <code>java --version</code>. If the version show up successfully then you have installed and setup Java correctly.</li>
+</ul>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f&ref_src=twsrc%5Etfw&text=Java%20Installation%20and%20Setup Sh4n%27s%20Portfolio%20and%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+    
+      <p>Enter a text here.</p>
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+      <p id="privateTriggerText">Do you like my contents?→<a id="privateTrigger">Click!</a></p>
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f&ref_src=twsrc%5Etfw&text=Java%20Installation%20and%20Setup Sh4n%27s%20Portfolio%20and%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fjava-installation-and-setup%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("Thank You! Please share it if you like it→");
+      });
+    });
+   })(jQuery);
+  </script>
+  
+  </body>
+</html>

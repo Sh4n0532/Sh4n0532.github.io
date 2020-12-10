@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sh4n&#39;s Portfolio and Blog</title>
+    <link>https://sh4n0532.github.io/</link>
+    <description>Recent content on Sh4n&#39;s Portfolio and Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Nov 2020 00:18:17 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://sh4n0532.github.io/about/</link>
+      <pubDate>Mon, 07 Dec 2020 16:53:07 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Palindrome Number</title>
+      <link>https://sh4n0532.github.io/posts/palindrome-number/</link>
+      <pubDate>Sun, 22 Nov 2020 00:18:17 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/palindrome-number/</guid>
+      <description>Problem Description Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Constraint: Must within the range of Integer.
+Follow up: Could you solve it without converting the integer to a string?
+Example 1:
+Input: x = 121 Output: true Example 2:
+Input: x = -121 Output: false Explanation: From left to right, it reads -121. From right to left, it becomes 121-.</description>
+    </item>
+    
+    <item>
+      <title>Reverse Number</title>
+      <link>https://sh4n0532.github.io/posts/reverse-number/</link>
+      <pubDate>Sun, 22 Nov 2020 00:12:08 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/reverse-number/</guid>
+      <description>Problem Description Given a 32-bit signed integer, reverse digits of an integer.
+Note: Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−2^31, 2^31 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+Input: x = 123 Output: 321 Solutions class Solution { public int reverse(int x) { long rev = 0; while (x !</description>
+    </item>
+    
+    <item>
+      <title>Two Sum</title>
+      <link>https://sh4n0532.github.io/posts/two-sum/</link>
+      <pubDate>Sun, 15 Nov 2020 00:06:33 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/two-sum/</guid>
+      <description>Problem Description Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Example 1:
+Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
+    </item>
+    
+    <item>
+      <title>Setup Django</title>
+      <link>https://sh4n0532.github.io/posts/setup-django/</link>
+      <pubDate>Tue, 13 Oct 2020 23:56:06 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/setup-django/</guid>
+      <description>Before you start to work with Django you must have Python installed. You can check if you have python with python --version or python3 --version in your terminal. If the command successfully return your python version then you are good to go.
+To install Python, please go to Python to see the complete process.
+Virtual Environment  Normally we will not install Django globally on a machine. We will create a virtual environment and install Django only in the environment.</description>
+    </item>
+    
+    <item>
+      <title>Python Installation and Setup</title>
+      <link>https://sh4n0532.github.io/posts/python-installation-and-setup/</link>
+      <pubDate>Mon, 12 Oct 2020 23:44:31 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/python-installation-and-setup/</guid>
+      <description>Homebrew Method  To install Python using Homebrew you must have Homebrew available in your machine. Please go to this page to see the installation process of Homebrew.
+Installing Python
+ brew install python to start the installation. After the installation is done it will print out something like this: It provide you the path that you will need to add PATH if you want to use this version of Python as the default Python.</description>
+    </item>
+    
+    <item>
+      <title>Java Package</title>
+      <link>https://sh4n0532.github.io/posts/java-package/</link>
+      <pubDate>Sun, 11 Oct 2020 23:50:36 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/java-package/</guid>
+      <description>If you are working with Java using a text editor like Sublime Text 3, Visual Studio Code, Notepad++, or any other text editor of your choice but not an IDE like Eclipse, you need to learn how to work with packages.
+What is Package?  Package in Java is just like a normal folder. The purpose of using package is only for better organization of your code.
+How to Work With Package?</description>
+    </item>
+    
+    <item>
+      <title>Homebrew</title>
+      <link>https://sh4n0532.github.io/posts/homebrew/</link>
+      <pubDate>Sun, 11 Oct 2020 22:54:48 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/homebrew/</guid>
+      <description>What is Homebrew  Homebrew is a package manager for MacOS and Linux. It helps us to install things you need in an easier way. Everything installed using Homebrew will be in its own directory so it is easier to manage them. It also provide many useful command to help you manage your packages.
+How to Install?  To install Homebrew on Mac you need to install the command line tools first.</description>
+    </item>
+    
+    <item>
+      <title>Command Line Tools</title>
+      <link>https://sh4n0532.github.io/posts/command-line-tools/</link>
+      <pubDate>Sun, 11 Oct 2020 16:34:21 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/command-line-tools/</guid>
+      <description>Installing Command Line Tools   Open terminal, enter xcode-select --install to install the command line tools to your Mac. You can use xcode-select --version to check the version installed. To see the path where the command line tools is installed you can use this command: xcode-select --print-path.  Uninstall Command Line Tools   Open Finder Select your drive, normally it is called Macintosh HD by default. Go to Library folder and find a folder named Developer.</description>
+    </item>
+    
+    <item>
+      <title>Java Installation and Setup</title>
+      <link>https://sh4n0532.github.io/posts/java-installation-and-setup/</link>
+      <pubDate>Sat, 10 Oct 2020 23:34:37 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/java-installation-and-setup/</guid>
+      <description>Install  You can install Java JDK through Oracle official website https://www.oracle.com/java/technologies/javase-downloads.html. Click on JDK Download and choose your operating system to start downloading. After that you just need to follow the normal installation process through the wizard.
+After install Java for MacOS you need to set the JAVA_HOME path. Add this export JAVA_HOME=&amp;quot;/usr/libexec/java_home -v 14&amp;quot; to your .bash_profile or .zshrc depending on your terminal type. Then you can use java --version to verify java version.</description>
+    </item>
+    
+    <item>
+      <title>Git and Github</title>
+      <link>https://sh4n0532.github.io/posts/git-and-github/</link>
+      <pubDate>Sat, 10 Oct 2020 23:05:30 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/git-and-github/</guid>
+      <description>Installing Git  To install Git go to their official website https://git-scm.com. Go to Download and select your operating system, then just go through the normal installation process.
+If you are using Mac and also familiar with Homebrew or you want try it out you can go to this page to see details about Homebrew. You can install Git with Homebrew by entering brew install git.
+Setup Git  After installing Git you should first verity the installation and check the version installed with git --version.</description>
+    </item>
+    
+  </channel>
+</rss>

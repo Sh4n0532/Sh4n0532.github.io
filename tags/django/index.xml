@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Sh4n&#39;s Portfolio and Blog</title>
+    <link>https://sh4n0532.github.io/tags/django/</link>
+    <description>Recent content in Django on Sh4n&#39;s Portfolio and Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Oct 2020 23:56:06 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Django</title>
+      <link>https://sh4n0532.github.io/posts/setup-django/</link>
+      <pubDate>Tue, 13 Oct 2020 23:56:06 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/setup-django/</guid>
+      <description>Before you start to work with Django you must have Python installed. You can check if you have python with python --version or python3 --version in your terminal. If the command successfully return your python version then you are good to go.
+To install Python, please go to Python to see the complete process.
+Virtual Environment  Normally we will not install Django globally on a machine. We will create a virtual environment and install Django only in the environment.</description>
+    </item>
+    
+  </channel>
+</rss>

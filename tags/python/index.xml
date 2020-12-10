@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Sh4n&#39;s Portfolio and Blog</title>
+    <link>https://sh4n0532.github.io/tags/python/</link>
+    <description>Recent content in Python on Sh4n&#39;s Portfolio and Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Oct 2020 23:56:06 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Django</title>
+      <link>https://sh4n0532.github.io/posts/setup-django/</link>
+      <pubDate>Tue, 13 Oct 2020 23:56:06 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/setup-django/</guid>
+      <description>Before you start to work with Django you must have Python installed. You can check if you have python with python --version or python3 --version in your terminal. If the command successfully return your python version then you are good to go.
+To install Python, please go to Python to see the complete process.
+Virtual Environment  Normally we will not install Django globally on a machine. We will create a virtual environment and install Django only in the environment.</description>
+    </item>
+    
+    <item>
+      <title>Python Installation and Setup</title>
+      <link>https://sh4n0532.github.io/posts/python-installation-and-setup/</link>
+      <pubDate>Mon, 12 Oct 2020 23:44:31 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/python-installation-and-setup/</guid>
+      <description>Homebrew Method  To install Python using Homebrew you must have Homebrew available in your machine. Please go to this page to see the installation process of Homebrew.
+Installing Python
+ brew install python to start the installation. After the installation is done it will print out something like this: It provide you the path that you will need to add PATH if you want to use this version of Python as the default Python.</description>
+    </item>
+    
+  </channel>
+</rss>

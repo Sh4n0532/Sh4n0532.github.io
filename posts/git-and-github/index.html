@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sh4n">
+    <meta name="description" content="https://sh4n0532.github.io">
+    <meta name="keywords" content="blog,developer,personal,programmer">
+
+    <meta property="og:site_name" content="Sh4n&#39;s Portfolio and Blog">
+    <meta property="og:title" content="
+  Git and Github - Sh4n&#39;s Portfolio and Blog
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sh4n0532.github.io/posts/git-and-github/">
+    <meta property="og:image" content="https://sh4n0532.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://sh4n0532.github.io/posts/git-and-github/">
+    <meta name="twitter:image" content="https://sh4n0532.github.io">
+
+    <base href="https://sh4n0532.github.io/posts/git-and-github/">
+    <title>
+  Git and Github - Sh4n&#39;s Portfolio and Blog
+</title>
+
+    <link rel="canonical" href="https://sh4n0532.github.io/posts/git-and-github/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://sh4n0532.github.io/index.xml" type="application/rss+xml" title="Sh4n&#39;s Portfolio and Blog">
+      <link href="https://sh4n0532.github.io/index.xml" rel="feed" type="application/rss+xml" title="Sh4n&#39;s Portfolio and Blog" />
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Sh4n&#39;s Portfolio and Blog</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/project">Project</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/tags">Tags</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Git and Github</h1>
+      <h2 class="date">October 10, 2020</h2>
+
+      
+    </header>
+
+    <h2 id="installing-git">Installing Git</h2>
+<hr>
+<p>To install Git go to their official website <a href="https://git-scm.com">https://git-scm.com</a>. Go to <em>Download</em> and select your operating system, then just go through the normal installation process.</p>
+<p>If you are using Mac and also familiar with <em>Homebrew</em> or you want try it out you can go to <a href="https://sh4n0532.github.io/posts/homebrew/">this page</a> to see details about Homebrew. You can install Git with Homebrew by entering <code>brew install git</code>.</p>
+<h2 id="setup-git">Setup Git</h2>
+<hr>
+<p>After installing Git you should first verity the installation and check the version installed with <code>git --version</code>. If it successfully show the version installed that means you have just installed Git correctly.
+<img src="/images/github/gitversion.png" alt="gitversion" title="Check version"></p>
+<p>Before you start working with Git you should configure your name and email. This is important information to let people know who made the changes.</p>
+<ul>
+<li><code>git config --global user.name &quot;your_name&quot;</code> to set your username.</li>
+<li><code>git config --global user.email &quot;email_address&quot;</code> to set your email address.</li>
+<li><code>git config --list</code> to list out all the configuration that you have set.
+<img src="/images/github/gitconfig.png" alt="gitconfig" title="List your git configuration"></li>
+</ul>
+<p>If you need help with some command you can enter <code>git help &lt;command&gt;</code> to see more details about the command and the operation that command perform.</p>
+<h2 id="to-track-or-untrack-a-local-folder">To Track or Untrack a Local Folder</h2>
+<hr>
+<p>To start tracking a folder you need a <em>.git</em> file inside the folder. Go to the folder you want to start tracking and enter <code>git init</code>. It will create a <em>.git</em> file. It is a hidden file so if you want to see the file you need to enter <code>ls -al</code> to list out all the files including the hidden one.</p>
+<p>To stop tracking a folder, go to the folder you are currently tracking and simply remove the <em>.git</em> file from the directory. You can simply find the file and delete it or use the command line way to remove it with <code>rm -rf .git</code>.</p>
+<h2 id="file-status">File Status</h2>
+<hr>
+<p>Enter <code>git status</code> to view the status of the tracking folder.</p>
+<p>If there are some files that you do not want to be track you can create a <em>.gitignore</em> file to make Git automatically ignore those files.</p>
+<ul>
+<li>Create a <em>.gitignore</em> file with <code>touch .gitignore</code>.</li>
+<li>Open <em>.gitignore</em> with any text editor you like.</li>
+<li>Add the files name that you want Git to ignore into this file.</li>
+<li>After you edit the file you can run <code>git status</code> again to check that the ignored files are no longer showing up.</li>
+</ul>
+<h2 id="staging-area">Staging Area</h2>
+<hr>
+<p>To add files to staging area enter:</p>
+<ul>
+<li><code>git add -A</code> will add all files from the working directory to staging area</li>
+<li><code>git add &lt;filename&gt;</code> allow you to specify which file will be added to the staging area</li>
+</ul>
+<p>To remove files from staging area:</p>
+<ul>
+<li><code>git reset</code> remove all the files from staging area</li>
+<li><code>git reset &lt;filename&gt;</code> to remove a particular file from staging area.</li>
+</ul>
+<h2 id="commit-changes">Commit Changes</h2>
+<hr>
+<p>After you have add all the files you want to commit to staging area, the files are ready to be commited.</p>
+<ul>
+<li><code>git commit -m 'your_message'</code> is the command used to commit changes locally.</li>
+<li><code>git log</code> will show the details of the commit you have just made.</li>
+</ul>
+<h2 id="push-local-changes-to-remote-repository-on-github">Push Local Changes to Remote Repository on GitHub</h2>
+<hr>
+<p>After the changes is commited we need to push the updated version of our work to GitHub repository.</p>
+<p>Before we push our changes we should first pull any changes that is done to the repository since the last time we pull with <code>git pull origin masteer</code>.</p>
+<p>After our work is up-to-date with the repository one we can push the changes we made to the repository. Enter <code>git push origin master</code> to push the changes to the remote repository.</p>
+<h2 id="to-clone-an-existing-remote-repository">To Clone an Existing Remote Repository</h2>
+<hr>
+<p>If you want to work with an existing project you can clone the project from GitHub repository to your local machine. To clone a repository enter <code>git clone &lt;url_of_the_repository&gt; &lt;location_to_clone_to&gt;</code></p>
+<h2 id="branch">Branch</h2>
+<hr>
+<p>Sometimes you may need to create a new branch for a new feature to prevent it from breaking the old working code or for unit test.</p>
+<p>To create a new branch, enter <code>git branch &lt;branch_name&gt;</code>. You can use <code>git branch</code> to view all your branches.</p>
+<p>To start working on the new branch you have just created, you need to checkout the branch, <code>git checkout &lt;branch_name&gt;</code>.</p>
+<p>To push your changes to the new branch all the process is same as normal push except this time you need to push to your new branch not master, <code>git push -u origin &lt;branch_name&gt;</code>.</p>
+<h2 id="merge-branch">Merge Branch</h2>
+<hr>
+<p>When you are happy with the work in your branch you can merge it with master.</p>
+<p>To merge other branch with master:</p>
+<ul>
+<li>You need to checkout master first by enter <code>git checkout master</code>.</li>
+<li>As usual pull the changes that other people may have made to the repository.</li>
+<li><code>git merge &lt;branch_name&gt;</code> to merge the branch with master.</li>
+<li>Then <code>git push origin master</code> to push the changes back to the remote repository.</li>
+</ul>
+<p>Then the branch is merged with master. You can check all the branches that merge to master before by <code>git branch --merged</code>.</p>
+<p>After merging the the branch we can now delete the branch.</p>
+<ul>
+<li><code>git branch -d &lt;branch_name&gt;</code> to delete the branch locally.</li>
+<li>To delete the branch in the remote repository enter <code>git push origin --delete &lt;branch_name&gt;</code></li>
+</ul>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f&ref_src=twsrc%5Etfw&text=Git%20and%20Github Sh4n%27s%20Portfolio%20and%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+    
+      <p>Enter a text here.</p>
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+      <p id="privateTriggerText">Do you like my contents?→<a id="privateTrigger">Click!</a></p>
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f&ref_src=twsrc%5Etfw&text=Git%20and%20Github Sh4n%27s%20Portfolio%20and%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fsh4n0532.github.io%2fposts%2fgit-and-github%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("Thank You! Please share it if you like it→");
+      });
+    });
+   })(jQuery);
+  </script>
+  
+  </body>
+</html>

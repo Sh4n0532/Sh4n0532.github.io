@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sh4n">
+    <meta name="description" content="https://sh4n0532.github.io">
+    <meta name="keywords" content="blog,developer,personal,programmer">
+
+    <meta property="og:site_name" content="Sh4n&#39;s Portfolio and Blog">
+    <meta property="og:title" content="
+  Reverse Number - Sh4n&#39;s Portfolio and Blog
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sh4n0532.github.io/posts/reverse-number/">
+    <meta property="og:image" content="https://sh4n0532.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://sh4n0532.github.io/posts/reverse-number/">
+    <meta name="twitter:image" content="https://sh4n0532.github.io">
+
+    <base href="https://sh4n0532.github.io/posts/reverse-number/">
+    <title>
+  Reverse Number - Sh4n&#39;s Portfolio and Blog
+</title>
+
+    <link rel="canonical" href="https://sh4n0532.github.io/posts/reverse-number/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://sh4n0532.github.io/index.xml" type="application/rss+xml" title="Sh4n&#39;s Portfolio and Blog">
+      <link href="https://sh4n0532.github.io/index.xml" rel="feed" type="application/rss+xml" title="Sh4n&#39;s Portfolio and Blog" />
+    
+
+    <meta name="generator" content="Hugo 0.78.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Sh4n&#39;s Portfolio and Blog</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/project">Project</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/tags">Tags</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://sh4n0532.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Reverse Number</h1>
+      <h2 class="date">November 22, 2020</h2>
+
+      
+    </header>
+
+    <h2 id="problem-description">Problem Description</h2>
+<p>Given a 32-bit signed integer, reverse digits of an integer.</p>
+<p><strong>Note:</strong> Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: <code>[−2^31, 2^31 − 1]</code>. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">Input: x = 123
+Output: 321
+</code></pre></div><h2 id="solutions">Solutions</h2>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Solution</span> 
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">reverse</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> 
+    <span class="o">{</span>   
+        <span class="kt">long</span> <span class="n">rev</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">x</span> <span class="o">!=</span> <span class="n">0</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="n">10</span><span class="o">;</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">10</span><span class="o">;</span>
+            <span class="n">rev</span> <span class="o">=</span> <span class="n">rev</span> <span class="o">*</span> <span class="n">10</span> <span class="o">+</span> <span class="n">temp</span><span class="o">;</span>
+        <span class="o">}</span>
+        
+        <span class="k">if</span> <span class="o">(</span><span class="n">rev</span> <span class="o">&gt;</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span> <span class="o">||</span> <span class="n">rev</span> <span class="o">&lt;</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MIN_VALUE</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="n">rev</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><ul>
+<li>Create a variable with <code>long</code> data type to store the reverse result because it has greater range than <code>int</code> data type. We will check the range later.</li>
+<li>When <code>x</code> is not equal to 0 we will continue to divide x and get its last digit with modulus. We cannot use <code>x &gt;= 1</code> because there are also negative value since this is signed integer.</li>
+<li>When we want to add a new digit we multiple the current digit by 10 so their place value increase.</li>
+<li>When we go out from the loop that means we already have the reversed integer stored in <code>rev</code>. Now we need to change its range to prevent overflow.</li>
+<li>If it is overflow we simply <code>return 0</code> else we convert it into <code>int</code> because the return type of the method is <code>int</code>.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Solution</span> 
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">reverse</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> 
+    <span class="o">{</span>
+        <span class="n">String</span> <span class="n">rev</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">().</span><span class="na">append</span><span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">x</span><span class="o">)).</span><span class="na">reverse</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+        <span class="k">try</span>
+        <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">0</span><span class="o">)</span>
+                <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">rev</span><span class="o">)</span> <span class="o">*</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span>
+            <span class="k">else</span>
+                <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">rev</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><ul>
+<li>With the help of Java built-in library and methods.</li>
+<li>Take the absolute value of <code>x</code> and convert it to string and reverse it.</li>
+<li>If x is smaller than 0 meaning that it is a negative value than we will convert it to Integer and  multiply <code>-1</code> into it so it will become negative.</li>
+<li>If it does not work that means it is out of range so we need to catch the exception and <code>return 0</code>.</li>
+</ul>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f&ref_src=twsrc%5Etfw&text=Reverse%20Number Sh4n%27s%20Portfolio%20and%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+    
+      <p>Enter a text here.</p>
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+      <p id="privateTriggerText">Do you like my contents?→<a id="privateTrigger">Click!</a></p>
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f&ref_src=twsrc%5Etfw&text=Reverse%20Number Sh4n%27s%20Portfolio%20and%20Blog&tw_p=tweetbutton&url=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fsh4n0532.github.io%2fposts%2freverse-number%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  <script>
+  (function($) {
+    $(function() {
+      $('#privateTrigger').on('click', function() {
+        $('.private').slideToggle();
+        $('#privateTriggerText').text("Thank You! Please share it if you like it→");
+      });
+    });
+   })(jQuery);
+  </script>
+  
+  </body>
+</html>
