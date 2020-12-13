@@ -6,7 +6,20 @@
     <description>Recent content on Sh4n&#39;s Portfolio and Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Nov 2020 17:56:10 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 18:48:29 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Longest Common Prefix</title>
+      <link>https://sh4n0532.github.io/posts/longest-common-prefix/</link>
+      <pubDate>Sun, 13 Dec 2020 18:48:29 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/longest-common-prefix/</guid>
+      <description>Problem Description Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string &amp;quot;&amp;quot;.
+Example 1:
+Input: strs = [&amp;#34;flower&amp;#34;,&amp;#34;flow&amp;#34;,&amp;#34;flight&amp;#34;] Output: &amp;#34;fl&amp;#34; Example 2:
+Input: strs = [&amp;#34;racecar&amp;#34;,&amp;#34;car&amp;#34;] Output: &amp;#34;&amp;#34; Explanation: There is no common prefix among the input strings. Solution class Solution { public String longestCommonPrefix(String[] strs) { String prefix = &amp;#34;&amp;#34;; if (strs == null || strs.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://sh4n0532.github.io/about/</link>
