@@ -6,7 +6,19 @@
     <description>Recent content on Sh4n&#39;s Portfolio and Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Dec 2020 18:48:29 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 18:13:37 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Valid Parentheses</title>
+      <link>https://sh4n0532.github.io/posts/valid-parentheses/</link>
+      <pubDate>Sun, 20 Dec 2020 18:13:37 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/valid-parentheses/</guid>
+      <description>Problem Description Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid.
+An input string is valid if:
+ Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order.  Example 4:
+Input: s = &amp;#34;([)]&amp;#34; - the order must also be correct Output: false Solution class Solution { public boolean isValid(String s) { HashMap&amp;lt;Character, Character&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); map.</description>
+    </item>
+    
     <item>
       <title>Longest Common Prefix</title>
       <link>https://sh4n0532.github.io/posts/longest-common-prefix/</link>
