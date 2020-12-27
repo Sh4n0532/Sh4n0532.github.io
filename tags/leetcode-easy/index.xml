@@ -6,7 +6,18 @@
     <description>Recent content in LeetCode (Easy) on Sh4n&#39;s Portfolio and Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Dec 2020 18:13:37 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/tags/leetcode-easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 16:40:45 +0800</lastBuildDate><atom:link href="https://sh4n0532.github.io/tags/leetcode-easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marge Two Sorted Lists</title>
+      <link>https://sh4n0532.github.io/posts/merge-two-sorted-lists/</link>
+      <pubDate>Sun, 27 Dec 2020 16:40:45 +0800</pubDate>
+      
+      <guid>https://sh4n0532.github.io/posts/merge-two-sorted-lists/</guid>
+      <description>Problem Description Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists.
+Example 1:
+Solution /** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.</description>
+    </item>
+    
     <item>
       <title>Valid Parentheses</title>
       <link>https://sh4n0532.github.io/posts/valid-parentheses/</link>
